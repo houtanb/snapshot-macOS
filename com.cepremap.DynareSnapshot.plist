@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Label</key>
+	<string>com.cepremap.DynareSnapshot.plist</string>
+
+	<key>ProgramArguments</key>
+	<array>
+		<string>/Users/houtanb/Documents/DYNARE/package/make-package.sh</string>
+	</array>
+
+	<key>EnvironmentVariables</key>
+	<dict>
+		<key>PATH</key>
+		<string>/usr/local/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:/usr/local/MacGPG2/bin:/Library/TeX/texbin:/usr/texbin</string>
+	</dict>
+
+	<key>StandardErrorPath</key>
+	<string>/Users/houtanb/Documents/DYNARE/package/package.err.log</string>
+
+	<key>StandardOutPath</key>
+	<string>/Users/houtanb/Documents/DYNARE/package/package.log</string>
+
+	<key>Nice</key>
+	<integer>1</integer>
+
+	<key>StartCalendarInterval</key>
+	<dict>
+		<key>Hour</key>
+			<integer>23</integer>
+		<key>Minute</key>
+			<integer>23</integer>
+	</dict>
+</dict>
+</plist>
