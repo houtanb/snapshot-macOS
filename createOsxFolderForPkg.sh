@@ -1,10 +1,10 @@
 #!/bin/bash
 set -ex
-TOP_DIR="$1"
-TOP_DYN_DIR="$TOP_DIR/$2"
-VERSION="$3"
+TOP_DIR=$1
+TOP_DYN_DIR=$TOP_DIR/$2
+VERSION=$3
 
-INSTALLDIRNAME=dynare-$VERSION-osx
+INSTALLDIRNAME=dynare-${VERSION}-osx
 INSTALLDIR=$TOP_DIR/$INSTALLDIRNAME
 rm -rf $INSTALLDIR
 mkdir $INSTALLDIR
@@ -14,8 +14,6 @@ echo $TOP_DYN_DIR
 echo $VERSION
 echo $INSTALLDIRNAME
 echo $INSTALLDIR
-
-aoeuaoeu
 
 ########################
 # UPDATE DYNARE SOURCE #
