@@ -1,10 +1,10 @@
 #!/bin/bash
 set -ex
+
 TOP_DIR=$1
 TOP_DYN_DIR=$TOP_DIR/$2
-VERSION=$3
+INSTALLDIRNAME=$3
 
-INSTALLDIRNAME=dynare-${VERSION}-osx
 INSTALLDIR=$TOP_DIR/$INSTALLDIRNAME
 rm -rf $INSTALLDIR
 mkdir $INSTALLDIR
@@ -47,7 +47,7 @@ cp -r $TOP_DYN_DIR/examples                                      $INSTALLDIR
 # CONFIGURE #
 #############
 ./configure FFLAGS='-mmacosx-version-min=10.8' CPPFLAGS='-mmacosx-version-min=10.8' LDFLAGS='-mmacosx-version-min=10.8' \
-            --with-matlab=/Volumes/Storage/MATLAB/MATLAB_R2009b.app MATLAB_VERSION=7.9 MEXEXT=mexmaci64 --disable-octave \
+            --with-matlab=/Applications/MATLAB_R2012a.app MATLAB_VERSION=R2012a MEXEXT=mexmaci64 --disable-octave \
             --with-matio=/usr/local/static --with-gsl=/usr/local/static --with-slicot=/usr/local/static
 make clean
 
