@@ -47,7 +47,7 @@ cp -r $TOP_DYN_DIR/examples                                      $INSTALLDIR
 # CONFIGURE #
 #############
 ./configure FFLAGS='-mmacosx-version-min=10.8' CPPFLAGS='-mmacosx-version-min=10.8' LDFLAGS='-mmacosx-version-min=10.8' \
-            --with-matlab=/Applications/MATLAB_R2012a.app MATLAB_VERSION=R2012a MEXEXT=mexmaci64 --disable-octave \
+            --with-matlab=/Applications/MATLAB_R2011b.app MATLAB_VERSION=R2011b MEXEXT=mexmaci64 --disable-octave \
             --with-matio=/usr/local/static --with-gsl=/usr/local/static --with-slicot=/usr/local/static
 make clean
 
