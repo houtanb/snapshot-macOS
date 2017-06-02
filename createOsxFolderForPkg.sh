@@ -5,7 +5,23 @@ TOP_DIR=$1
 TOP_DYN_DIR=$TOP_DIR/$2
 INSTALLDIRNAME=$3
 
+if [ -z "$TOP_DIR" ]; then
+    exit 1;
+fi
+
+if [ "/" == "$TOP_DYN_DIR" ]; then
+    exit 1;
+fi
+
+if [ -z "$INSTALLDIRNAME" ]; then
+    exit 1;
+fi
+
 INSTALLDIR=$TOP_DIR/$INSTALLDIRNAME
+
+if [ "/" == "$INSTALLDIR" ]; then
+    exit 1;
+fi
 rm -rf $INSTALLDIR
 mkdir $INSTALLDIR
 
