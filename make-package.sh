@@ -46,6 +46,13 @@ cp -f $WORK_DIR/$FINALBASENAME.zip $PKG_DIR/dynare-latest-osx.zip
 mv -f $WORK_DIR/$FINALBASENAME.zip $PKG_DIR
 rm -rf $WORK_DIR/dynare-*
 find $PKG_DIR -type f | sort -r | awk 'NR>11' | xargs rm
+
+# create SHAs
+cd $PKG_DIR
+rm -f MD5SUMS SHA1SUMS SHA256SUMS SHA512SUMS
+cd $TOP_DIR
+$TOP_DIR/createshas.sh
+
 set +e
 `date +%Y-%m-%d`
 rsync -v -r -t -e 'ssh -i /Users/houtanb/Documents/DYNARE/package/snapshot-manager_rsa' --delete $PKG_DIR snapshot-manager@kirikou.cepremap.org:/srv/d_kirikou/www.dynare.org/snapshot
