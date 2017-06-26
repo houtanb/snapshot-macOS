@@ -45,7 +45,6 @@ mkdir "$INSTALLDIR/dynare++"
 mkdir -p "$INSTALLDIR/doc/dynare++"
 mkdir "$INSTALLDIR/doc/dynare.html"
 mkdir -p "$INSTALLDIR/contrib/ms-sbvar/TZcode"
-mkdir -p "$INSTALLDIR/contrib/jsonlab"
 mkdir -p "$INSTALLDIR/mex/matlab/osx"
 
 # top level
@@ -58,7 +57,7 @@ cp $TOP_DYN_DIR/license.txt                                      $INSTALLDIR
 cp -r $TOP_DYN_DIR/contrib/ms-sbvar/TZcode/MatlabFiles           $INSTALLDIR/contrib/ms-sbvar/TZcode
 
 # JSONlab
-cp -r $TOP_DYN_DIR/contrib/jsonlab                               $INSTALLDIR/contrib/jsonlab
+cp -r $TOP_DYN_DIR/contrib/jsonlab                               $INSTALLDIR/contrib
 
 # examples
 cp -r $TOP_DYN_DIR/examples                                      $INSTALLDIR
