@@ -4,3 +4,4 @@ last_sha.txt
 snapshot-manager_rsa
 macosx
 scratch
+*.pkg
