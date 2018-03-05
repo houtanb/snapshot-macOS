@@ -7,6 +7,9 @@ PKG_DIR="$TOP_DIR/macosx"
 WORK_DIR="$TOP_DIR/scratch"
 LAST_SHA_FILENAME="$TOP_DIR/last_sha.txt"
 
+rm -f $TOP_DIR/package.log
+rm -f $TOP_DIR/package.err.log
+
 if [ ! -d $WORK_DIR ]; then
     mkdir $WORK_DIR
 fi
