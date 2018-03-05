@@ -89,7 +89,7 @@ make pdf
 cp -r $TOP_DYN_DIR/matlab                                        $INSTALLDIR
 
 # compiled preprocessor
-cp $TOP_DYN_DIR/preprocessor/dynare_m                            $INSTALLDIR/matlab
+cp $TOP_DYN_DIR/preprocessor/src/dynare_m                        $INSTALLDIR/matlab
 
 # dynare++
 cp $TOP_DYN_DIR/dynare++/src/dynare++                            $INSTALLDIR/dynare++
@@ -100,10 +100,11 @@ cp $TOP_DYN_DIR/doc/bvar-a-la-sims.pdf                           $INSTALLDIR/doc
 cp $TOP_DYN_DIR/doc/dr.pdf                                       $INSTALLDIR/doc
 cp $TOP_DYN_DIR/doc/dynare.pdf                                   $INSTALLDIR/doc
 cp $TOP_DYN_DIR/doc/guide.pdf                                    $INSTALLDIR/doc
-cp $TOP_DYN_DIR/doc/macroprocessor/macroprocessor.pdf            $INSTALLDIR/doc
 cp $TOP_DYN_DIR/doc/parallel/parallel.pdf                        $INSTALLDIR/doc
-cp $TOP_DYN_DIR/doc/preprocessor/preprocessor.pdf                $INSTALLDIR/doc
 cp $TOP_DYN_DIR/doc/gsa/gsa.pdf                                  $INSTALLDIR/doc
+
+cp $TOP_DYN_DIR/preprocessor/doc/macroprocessor/macroprocessor.pdf            $INSTALLDIR/doc
+cp $TOP_DYN_DIR/preprocessor/doc/preprocessor/preprocessor.pdf                $INSTALLDIR/doc
 
 # doc (dynare++)
 cp $TOP_DYN_DIR/dynare++/doc/dynare++-tutorial.pdf               $INSTALLDIR/doc/dynare++
